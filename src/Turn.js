@@ -1,29 +1,23 @@
 class Turn {
   constructor(userGuess, card) {
+    this.guess = userGuess;
+    this.card = card;
+  }
 
-    function returnGuess(userGuess) {
-      return userGuess;
-    }
+  returnGuess() {
+    return this.guess;
+  }
 
-    function returnCard(card) {
-      return card;
-    }
+  returnCard() {
+    return this.card;
+  }
 
-    function evaluateGuess() {
-      if(returnGuess(userGuess) === returnCard(card).correctAnswer) {
-        return true;
-      } else {
-        return false;
-      }
-    }
+  evaluateGuess() {
+    return this.guess === this.card.correctAnswer ? true : false;
+  }
 
-    function giveFeedback() {
-      if(evaluateGuess === true) {
-        return 'correct!';
-      } else {
-        return 'incorrect!';
-      }
-    }
+  giveFeedback() {
+    return this.guess === this.card.correctAnswer ? 'Correct!' : 'Incorrect!';
   }
 }
 
