@@ -84,7 +84,7 @@ describe('Round', () => {
     
     round.calculatePercentCorrect();
 
-    expect(round.calculatePercentCorrect()).to.equal(33.33333333333333)
+    expect(round.calculatePercentCorrect()).to.equal(67)
   });
 
   it('should print an end game message', () => {
@@ -94,7 +94,7 @@ describe('Round', () => {
     round.takeTurn('splice()');
     
     round.calculatePercentCorrect();
-    
+
     round.endRound();
   })
 });
