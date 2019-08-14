@@ -9,11 +9,26 @@ describe('Deck', () => {
   let card1, card2, card3, deck;
 
   beforeEach(() => {
-  card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
+  card1 = new Card({
+    id : 2,
+    question : 'What is a comma-separated list of related values?',
+    answers : ['array', 'object', 'function'],
+    correctAnswer : 'array'
+  });
 
-  card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
+  card2 = new Card({
+    id : 3,
+    question : 'What type of prototype method directly modifies the existing array?',
+    answers : ['mutator method', 'accessor method', 'iteration method'],
+    correctAnswer : 'mutator method'
+  });
 
-  card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
+  card3 = new Card({
+    "id": 4,
+    "question": "What type of prototype method does not modify the existing array but returns a particular representation of the array?",
+    "answers": ["mutator method", "accessor method", "iteration method"],
+    "correctAnswer": "accessor method"
+  });
 
   deck = new Deck([card1, card2, card3]);
   });
