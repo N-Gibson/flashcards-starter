@@ -6,7 +6,7 @@ The purpose of this project is to learn how JavaScript classes interact with one
 
 ## Game in action 
 
-
+![FlashcardsGif](https://user-images.githubusercontent.com/49107377/63175668-b246de80-c001-11e9-955a-138934171c19.gif)
 
 ## Setup
 
